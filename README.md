@@ -9,4 +9,3 @@ Run the `frontend` with `yarn start`.
 ## Libraries used:
 
 - MUI (https://github.com/mui-org/material-ui)
-- Routing Controllers (https://github.com/typestack/routing-controllers)
