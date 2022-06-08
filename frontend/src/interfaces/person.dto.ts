@@ -1,4 +1,4 @@
-export interface IPersonDTO {
+export interface IPersonProps {
   id: string;
   email: string;
   profile_picture: string;
