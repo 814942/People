@@ -1,2 +1,49 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&family=Titillium+Web:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/*
+font-family: 'Major Mono Display', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: "Architects Daughter", cursive;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  /* scale */
+  --caption: 14px;
+  --note: 16px;
+  --base: 20px;
+  --subheader: 30px;
+  --title: 48px;
+  --headline: 72px;
+  --display: 96px;
+  --jumbo: 144px;
+
+  /* color palette */
+  --primario-1: #fff7f7;
+  --primario-2: #ffd5d7;
+  --primario-3: #ffb3b7;
+  --primario-4: #ff5e67;
+
+  --secundario-1: #45797b;
+  --secundario-2: #2d4e4f;
+  --secundario-3: #142324;
+
+  --terciario-1: #fcfa51;
+  --terciario-2: #fc3838;
+  --terciario-3: #1ea7fc;
+  --terciario-4: #49f60d;
+  --terciario-5: #195603;
+  --terciario-6: #061401;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  opacity: 0.8;
 }

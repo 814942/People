@@ -1,14 +1,18 @@
-import React from 'react';
-import { Router } from '@reach/router';
+import React from "react";
+import { Router } from "@reach/router";
 
 import { Layout } from './layout/layout.component';
 import { DashboardPage } from './pages/dashboard.page';
+import { HomePage } from "./pages/home.pages";
 
 export function Routes() {
   return (
     <Layout>
       <Router>
-        <DashboardPage/>
+        <HomePage path="/home"/>
+      </Router>
+      <Router>
+        <DashboardPage path="/dashboard"/>
       </Router>
     </Layout>
   );
