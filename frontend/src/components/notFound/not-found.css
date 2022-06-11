@@ -1,5 +1,6 @@
 .container_not_found {
   background-image: url("../../assets/img/notFound.jpg");
+  height: 100vw;
 }
 
 .title_not_found {
