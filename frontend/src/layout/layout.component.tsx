@@ -13,8 +13,9 @@ export const Layout: React.FC<Props> = ({ children }) => {
       <div
       style={{ 
         background: "linear-gradient(to left, #2C5364, #203A43, #0F2027)",
-        height: "100vw",
-        width: "100vw"
+        height: "100%",
+        width: "100%",
+        margin: "2rem 0 0 0"
       }}>
         {children}
       </div>

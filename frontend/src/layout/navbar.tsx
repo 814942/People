@@ -10,9 +10,6 @@ export const NavBar: React.FC<RouteComponentProps> = () => {
       <Button color="inherit" href="/dashboard">
         People's Dashboard
       </Button>
-      <Button color="inherit" href="/home">
-        Take my home
-      </Button>
       </div>
     </AppBar>
   );

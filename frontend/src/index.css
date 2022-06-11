@@ -44,6 +44,6 @@ html {
 
 /* ERROR */
 .error {
-  color: red;
+  color: var(--terciario-2);
   opacity: 0.8;
 }
