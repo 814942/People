@@ -1,2 +1,25 @@
-body {
+body, html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-image: url("./assets/img/background-wave.png");
+  background-size: 100vw 360px, 100%;
+  background-position: center bottom, 0px -1px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: static!important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.relative-wrapper{
+  position: relative;
+}
+
+/* Reset */
+blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
 }

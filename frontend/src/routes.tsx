@@ -9,7 +9,7 @@ export function Routes() {
   return (
     <Layout>
       <Router>
-        <HomePage path="/home"/>
+        <HomePage path="/"/>
       </Router>
       <Router>
         <DashboardPage path="/dashboard"/>

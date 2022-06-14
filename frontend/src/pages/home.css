@@ -1,0 +1,177 @@
+.site-home-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: calc(100vh);
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  z-index: 2;
+
+  padding-top: 64px
+}
+@media (max-width: 1023px) {
+  .site-home-container {
+      padding-top: 56px
+  }
+}
+@media (max-width: 767px) {
+  .site-home-container {
+      padding-top: 94px
+  }
+}
+
+.landing-home-introduction {
+  background-color: #fff;
+  position: relative;
+}
+.landing-home-introduction .home-text {
+  position: relative;
+  z-index: 2;
+  padding: 96px 0;
+  float: left;
+  width: 588px;
+}
+@media (max-width: 1023px) {
+  .landing-home-introduction .home-text {
+      float:none;
+      padding: 72px 0 0 0;
+      width: 100%
+  }
+}
+@media (max-width: 767px) {
+  .landing-home-introduction .home-text {
+      padding:64px 0 0 0;
+      width: 100%
+  }
+}
+
+.home-text h1 {
+  color: #000;
+}
+@media (max-width: 1023px) {
+  .home-text h1 {
+      width:75%
+  }
+}
+@media (max-width: 767px) {
+  .home-text h1 {
+      width:100%
+  }
+}
+.home-text p {
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #606060;
+  margin-top: 32px;
+  width: 486px
+}
+@media (max-width: 1023px) {
+  .home-text p {
+      width: 62.5%
+  }
+}
+@media (max-width: 767px) {
+  .home-text p {
+      font-family:Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      width: 100%
+  }
+}
+
+.content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+}
+.content:after {
+  content: " ";
+  display: block;
+  clear: both
+}
+@media (max-width: 1023px) {
+  .content {
+      padding-left:28px;
+      padding-right: 28px;
+      width: 100%
+  }
+}
+@media (max-width: 767px) {
+  .content {
+      padding-left:16px;
+      padding-right: 16px;
+      width: 100%
+  }
+}
+
+.landing-home-introduction .home-cta {
+  display: inline-block;
+  width: 486px;
+}
+@media (max-width: 1023px) {
+  .landing-home-introduction .home-cta {
+      width: auto
+  }
+}
+
+.MuiButton-root {
+  /* This doesnt works */
+  margin-top: 48px;
+  background-color: #0c66ff;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 32px;
+  user-select: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  -webkit-transition: opacity .2s linear,color .2s linear,background-color .2s linear,border .2s linear;
+  transition: opacity .2s linear,color .2s linear,background-color .2s linear,border .2s linear;
+}
+
+.caption {
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #bbb;
+  text-align: left;
+  display: inline-block;
+  margin-left: 32px;
+  vertical-align: middle;
+}
+
+.home-preview{
+  right: 96px;
+}
+
+.landing-home-introduction .home-preview {
+  height: 535px;
+  right: 0;
+  backface-visibility: hidden;
+  background-image: url("../assets//img/resume-cover.png");
+  background-repeat: no-repeat;
+  background-size: 50vw 535px, 100%;
+  opacity: 1;
+  position: relative;
+  display: flex;
+}
+@media (max-width: 1023px) {
+  .landing-home-introduction .home-preview {
+    display: none;
+  }
+}
