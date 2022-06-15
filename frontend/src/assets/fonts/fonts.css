@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto&family=Titillium+Web:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/*
+font-family: "Major Mono Display", monospace;
+font-family: "Roboto", sans-serif;
+font-family: "Titillium Web", sans-serif;
+font-family: "Architects Daughter", cursive;
+*/
+
+html {
+  --caption: 14px;
+  --note: 16px;
+  --base: 20px;
+  --subheader: 30px;
+  --title: 48px;
+  --headline: 72px;
+  --display: 96px;
+  --jumbo: 144px;
+}
+
+@media (max-width: 767px) {
+  html {
+    /* for smaller windows */
+    --caption: 12px;
+    --note: 14px;
+    --base: 16px;
+    --subheader: 20px;
+    --title: 24px;
+    --headline: 36px;
+    --display: 48px;
+    --jumbo: 60px;
+  }
+}

@@ -1,0 +1,19 @@
+html {
+  /* Color palette */
+  --primario-1: hsl(0, 100, 24);
+  --primario-2: hsl(356, 83, 41);
+  --primario-3: hsl(40, 91, 91);
+  --primario-4: hsl(201, 100, 14);
+  --primario-5: hsl(203, 39, 57);
+
+  --secundario-1: hsl(180, 60, 66);
+  --secundario-2: hsl(187, 29, 44);
+  --secundario-3: hsl(207, 43, 16);
+  --secundario-4: hsl(183, 100, 14);
+  --secundario-5: hsl(163, 91, 39);
+
+  --warning: #fcfa51;
+  --error: #fc3838;
+  --success: #49f60d;
+  --black: #061401;
+}
