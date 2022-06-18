@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import { AppBar, Button } from '@material-ui/core';
 
-import { RouteComponentProps } from '@reach/router';
+import { RouteComponentProps } from "@reach/router";
 
 export const NavBar: React.FC<RouteComponentProps> = () => {
   return (

@@ -1,12 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import { NavBar } from './navbar';
+import { NavBar } from "./navbar";
 
-export const Layout: React.FC<{}> = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+
+export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <NavBar />
-      {children}
+      <div
+      style={{ 
+        background: "linear-gradient(to left, #2C5364, #203A43, #0F2027)",
+        height: "100%",
+        width: "100%",
+        margin: "2rem 0 0 0"
+      }}>
+        {children}
+      </div>
     </>
   );
 };
