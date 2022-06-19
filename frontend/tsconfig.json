@@ -6,6 +6,7 @@
       "dom",
       "ES2019"
     ],
+    "strictNullChecks": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
