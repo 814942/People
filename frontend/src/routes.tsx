@@ -9,10 +9,7 @@ export function Routes() {
   return (
     <Layout>
       <Router>
-        <HomePage path="/home"/>
-      </Router>
-      <Router>
-        <DashboardPage path="/dashboard"/>
+        <DashboardPage default path="/dashboard"/>
       </Router>
     </Layout>
   );
