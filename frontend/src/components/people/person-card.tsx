@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IPersonProps } from '../../interfaces/person.dto';
 import { Avatar, Card } from '@material-ui/core';
 
-import "./person-card.css"
+import "./person-card.css";
 
 export const PersonCard: FC<IPersonProps> = ({ 
   email, profile_picture, title, company, first_name, last_name 
