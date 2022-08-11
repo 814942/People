@@ -4,9 +4,7 @@ import { Avatar, Card } from '@material-ui/core';
 
 import "./person-card.css";
 
-export const PersonCard: FC<IPersonProps> = ({ 
-  email, profile_picture, title, company, first_name, last_name 
-}: IPersonProps) => {
+export const PersonCard: FC<IPersonProps> = (personProps: IPersonProps) => {
   return (
     <Card>
       <div className="card center">
@@ -15,15 +13,15 @@ export const PersonCard: FC<IPersonProps> = ({
           <Avatar
             variant="circular"
             sizes="150px"
-            alt={profile_picture}
-            // src={profile_picture}
+            alt={personProps.profile_picture}
+            // src={personProps.profile_picture}
           />
         </div>
         <div className="right-container center">
-          <p className="user-name">{`${first_name} ${last_name}`}</p>
-          <p className="user-data">{title}</p>
-          <p className="user-data">{company}</p>
-          <p className="user-data">{email}</p>
+          <p className="user-name">{`${personProps.first_name} ${personProps.last_name}`}</p>
+          <p className="user-data">{personProps.title}</p>
+          <p className="user-data">{personProps.company}</p>
+          <p className="user-data">{personProps.email}</p>
         </div>
         <div className="slide center">
           <p>Contact</p>
