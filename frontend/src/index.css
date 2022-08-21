@@ -11,6 +11,7 @@ font-family: "Architects Daughter", cursive;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -46,4 +47,11 @@ html {
 .error {
   color: var(--terciario-2);
   opacity: 0.8;
+}
+
+/* UNIVERSAL CLASSES */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
