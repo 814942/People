@@ -7,8 +7,12 @@ export class PeopleManager {
     const { data } = await axios.get($URL);
     return data;
   }
-  async getPerson(id) {
+  async getPersonById(id) {
     const { data } = await axios.get(`${$URL}/${id}`);
+    return data;
+  }
+  async getPersonByName(name) {
+    const { data } = await axios.get(`${$URL}?search=${name}`);
     return data;
   }
   async addPerson(person) {
