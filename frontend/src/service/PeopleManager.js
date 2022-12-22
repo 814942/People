@@ -4,23 +4,48 @@ const $URL = "https://62b0ed83e460b79df04f71c4.mockapi.io/people/people";
 
 export class PeopleManager {
   async getPeople() {
-    const { data } = await axios.get($URL);
-    return data;
+    try {
+      const { status, statusText, data } = await axios.get($URL);
+      return { status, statusText, data };
+    } catch (error) {
+      console.error(error);
+      return { status: 500, statusText: error.message, data: [] }
+    }
   }
   async getPersonById(id) {
-    const { data } = await axios.get(`${$URL}/${id}`);
-    return data;
+    try {
+      const { status, statusText, data } = await axios.get(`${$URL}/${id}`);
+      return { status, statusText, data };
+    } catch (error) {
+      console.error(error);
+      return { status: 500, statusText: error.message, data: [] }
+    }
   }
   async getPersonByName(name) {
-    const { data } = await axios.get(`${$URL}?search=${name}`);
-    return data;
+    try {
+      const { status, statusText, data } = await axios.get(`${$URL}?search=${name}`);
+      return { status, statusText, data };;
+    } catch (error) {
+      console.error(error);
+      return { status: 500, statusText: error.message, data: [] }
+    }
   }
   async addPerson(person) {
-    const { status, statusText, data } = await axios.post($URL, { person });
-    return { status, statusText, data };
+    try {
+      const { status, statusText, data } = await axios.post($URL, { person });
+      return { status, statusText, data };
+    } catch (error) {
+      console.error(error);
+      return { status: 500, statusText: error.message, data: [] }
+    }
   }
   async deletePerson(id) {
-    const { status, statusText, data } = await axios.delete(`${$URL}/${id}`, { id });
-    return { status, statusText, data };
+    try {
+      const { status, statusText, data } = await axios.delete(`${$URL}/${id}`, { id });
+      return { status, statusText, data };
+    } catch (error) {
+      console.error(error);
+      return { status: 500, statusText: error.message, data: [] }
+    }
   }
 }
