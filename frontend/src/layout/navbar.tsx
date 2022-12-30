@@ -73,10 +73,10 @@ export const NavBar: React.FC<RouteComponentProps> = () => {
         </div>
         <nav className="global--navbar">
           <StyledButton className="navbar--items" color="inherit" href="/dashboard">
-            People's Dashboard
+            Dashboard
           </StyledButton>
           <StyledButton className="navbar--items" color="inherit" href="/home">
-            Take my home
+            Home
           </StyledButton>
         </nav>
       </div>
